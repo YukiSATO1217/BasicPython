@@ -1,9 +1,7 @@
-a = input("aの値を入力: ")
-b = input("bの値を入力: ")
+a = int(input("aの値を入力: "))
+b = int(input("bの値を入力: "))
 
 # TODO
-a = int(a)
-b = int(b)
 def pri(a):
     if a == 1:
         print("素数ではありません")

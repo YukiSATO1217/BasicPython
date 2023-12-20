@@ -8,31 +8,26 @@ def euclid3(a, b):
     while b != 0:
         a, b = b, a % b
     c = a
-    print("最大公約数は" + str(c) + "です")
+    return "最大公約数は" + str(c) + "です"
     
 def euclid4(a, b):
     while b != 0:
         a, b = b, a % b
     c = a
     if c == 1:
-        print (True)
+        return True
     else:  
-        print(False)
+        return False
 
-def extra(a, b):
-    p = 0
-    for i in range(100000):
-        a, b = random.sample(range(1, 10000), 2)
-        while b != 0:
-            a, b = b, a % b
-        c = a
-        if c == 1:
-            p += 1
-    print("各組が互いに素である確率は" + str(p / 100000) + "です")
+print(euclid3(a, b))
+print(euclid4(a, b))
 
-euclid3(a, b)
-euclid4(a, b)
-extra(a, b)
+p = 0
+for i in range(100000):
+    a, b = random.sample(range(1, 10000), 2)
+    if euclid4(a, b) == True:
+        p += 1
+print("各組が互いに素である確率は" + str(p / 100000) + "です")
 
 from math import pi
 

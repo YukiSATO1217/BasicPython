@@ -1,8 +1,9 @@
-from math import sin
+from math import sin, pi, exp
 # --example--
 # print(sin(0))
 # >>> 0
 # -----------
+
 from math import pi
 
 a = 0

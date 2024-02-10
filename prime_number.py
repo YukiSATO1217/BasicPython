@@ -3,6 +3,7 @@ b = int(input("bの値を入力: "))
 
 # TODO
 def pri(a):
+
     if a == 1:
         print("素数ではありません")
     else:
